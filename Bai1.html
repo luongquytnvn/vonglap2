@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 1;
+    let number;
+    let count = 0;
+    let d = '';
+    while (count < 10) {
+        d = d + a + ' ' + b + ' ';
+        a = a + b;
+        b = a + b;
+        count++;
+    }
+    document.write('20 số Finonaci đầu tiên là: ' + d);
+</script>
+</body>
+</html>

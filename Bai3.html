@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+for (i=1;i<=5;i++) {
+    for (j=1;j<=i;j++) {
+        document.write('*');
+    }
+    document.write('<br/>');
+}
+document.write('<br/>');
+for (i=5;i>0;i--) {
+    for (j=1;j<=i;j++) {
+        document.write('*');
+    }
+    document.write('<br/>');
+}
+document.write('<br/>');
+for (i=0;i<5;i++) {
+    for (j=0;j<5
+        ;j++) {
+      if(i<=j)  document.write('*');
+      else document.write('&nbsp&nbsp')
+    }
+    document.write('<br/>');
+}
+document.write('<br/>');
+let num = "<table style='text-align: center' cellspacing = '0' cellpadding = '3'>";
+for (i = 5; i > 0; i--) {
+    num = num + '<tr>';
+    for (j = 1; j <= 5; j++) {
+        if (i>j) {
+            num = num + '<td>'+' ' +'<td/>';
+        } else {
+            num = num +'<td>'+'*' +'<td/>';
+        }
+    }
+    num = num + '<tr/>';
+}
+num = num + '<tr/>';
+document.write(num);
+document.write('<br/>');
+document.write('<br/>');
+let num1 = "<table style='text-align: center' cellspacing = '0' cellpadding = '3'>";
+for (i = 1; i <=5; i++) {
+    num1 = num1 + '<tr>';
+    for (j = 1; j <= 5; j++) {
+        if (i>j) {
+            num1 = num1 + '<td>'+' ' +'<td/>';
+        } else {
+            num1 = num1 +'<td>'+'*' +'<td/>';
+        }
+    }
+    num1 = num1 + '<tr/>';
+}
+num1 = num1 + '<tr/>';
+document.write(num1);
+
+
+
+
+</script>
+</body>
+</html>

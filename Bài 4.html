@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    var hcn = '<table>';
+    for (var i = 1; i <= 7; i++) {
+        hcn = hcn + '<tr>';
+        for (j = 1; j <= 20; j++) {
+            if (i == 1 || i == 7) {
+                hcn = hcn + '<td>' + '*' + '<td/>';
+            } else if (j==1 || j==20) {
+                hcn = hcn + '<td>' + '*' + '<td/>';
+            } else {
+                hcn = hcn + '<td>' + ' ' + '<td/>';
+            }
+        }
+        hcn = hcn + '<tr/>';
+    }
+    hcn = hcn + '<table/>';
+    document.write(hcn);
+</script>
+</body>
+</html>
